@@ -1,6 +1,8 @@
 +++
 title = "syntax highlighting"
 date = "2022-01-15"
+[extra]
+latex = true
 +++
 
 ### 31. Coin sums
