@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ config.title }}</title>
+  <link rel="stylesheet" href="{{ get_url(path="simple.css", trailing_slash=false) }}">
+
+  {% if config.extra.favicon %}
+  <link rel="shortcut icon" href="{{ config.extra.favicon }}">
+  {% endif %}
+
+  <link rel="alternate" type="application/atom+xml" title="Ciao!" href="{{ config.base_url }}/atom.xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ 
+  {% if page.extra.latex %}
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  {% endif %}
+
+</head>
+
+<body>
+    {% block content %} {% endblock %}
+</body>
+
+</html>
