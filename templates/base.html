@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ get_url(path="simple.css", trailing_slash=false) }}">
 
   {% if config.extra.favicon %}
-  <link rel="shortcut icon" href="{{ config.extra.favicon }}">
+  <link rel="shortcut icon" href="{{ config.base_url }}{{ config.extra.favicon }}">
   {% endif %}
 
   <link rel="alternate" type="application/atom+xml" title="Ciao!" href="{{ config.base_url }}/atom.xml">
