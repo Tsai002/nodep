@@ -1,5 +1,7 @@
 # nodep
 
+A [zola](https://www.getzola.org/) theme with no javascript and unnecessary css dependency at all.
+
 ## Usage
 
 1. Download [zola](https://www.getzola.org/documentation/getting-started/installation/)
@@ -13,14 +15,12 @@
 
 ### No unnecessary dependency
 
-A [zola](https://www.getzola.org/) theme with no javascript and unnecessary css dependency at all.
-
 On the basis of great work of [simple.css](https://github.com/kevquirk/simple.css) and [Nicole White](https://github.com/nicolewhite/nicolewhite.github.io_old), only 10KB css file is needed (2.91KB transfered if you minify it ), no jQuery or Bootstrap at all.
 
 * one html (1.46KB transfered / 1.86KB size)
 * one css (3.91KB transfered / 10.42KB size)
 * **optional** GitHub/mail/rss icons
-* **option** favicon
+* **optional** favicon
 
 In my personal [blog](https://tsai002.github.io), I make these svgs and favicon inlined to html so that only two requests required:
 
