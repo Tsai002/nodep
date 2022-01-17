@@ -513,6 +513,8 @@ pre code {
   background: none;
   margin: 0;
   padding: 0;
+  word-wrap: normal;
+  word-break: normal;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -566,10 +568,6 @@ pre code {
 
   header ul, header p.view {
     position:static;
-  }
-
-  pre, code {
-    word-wrap:normal;
   }
 }
 
