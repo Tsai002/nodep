@@ -19,7 +19,7 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-github = "https://github.com/Tsai002"
+github = "https://github.com/Tsai002/nodep"
 douban = ""
 mastodon = "https://mastodon.xyz/@ciao"
 mail = "tsai2049@gmail.com"
