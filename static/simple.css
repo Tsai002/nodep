@@ -61,7 +61,6 @@ body {
   background: var(--bg);
   font-size: var(--base-fontsize);
   line-height: var(--line-height);
-  display: flex;
   padding: 50px;
   overflow-x: hidden;
   word-break: break-word;
