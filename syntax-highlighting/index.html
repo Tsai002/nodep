@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ciao!</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep/simple.css" }}">
+
+  
+  <link rel="shortcut icon" href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep&#x2F;imgs&#x2F;zola-favicon.ico">
+  
+
+  <link rel="alternate" type="application/atom+xml" title="Ciao!" href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep/atom.xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ 
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError : false
+          });
+      });
+  </script>
+  
+
+</head>
+
+<body>
+    
+    <div class="blogpost">
+      <a href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep">&#8592; Home</a>
+      <h2 class="post-title">syntax highlighting</h2>
+      <h3 id="31-coin-sums">31. Coin sums</h3>
+<p>In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:</p>
+<p>$1p, 2p, 5p, 10p, 20p, 50p, £1 (100p)$ and $£2 (200p)$.</p>
+<p>It is possible to make £2 in the following way:</p>
+<p>$$1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p$$</p>
+<p>How many different ways can £2 be made using any number of coins?</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>coins = [</span><span style="color:#d08770;">1</span><span>,</span><span style="color:#d08770;">2</span><span>,</span><span style="color:#d08770;">5</span><span>,</span><span style="color:#d08770;">10</span><span>,</span><span style="color:#d08770;">20</span><span>,</span><span style="color:#d08770;">50</span><span>,</span><span style="color:#d08770;">100</span><span>,</span><span style="color:#d08770;">200</span><span>]
+</span><span>
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">findcoin</span><span>(</span><span style="color:#bf616a;">target</span><span>, </span><span style="color:#bf616a;">n</span><span>):
+</span><span>    </span><span style="color:#b48ead;">if </span><span>n &lt;=  </span><span style="color:#d08770;">1</span><span>:
+</span><span>        </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">1
+</span><span>    res = </span><span style="color:#d08770;">0
+</span><span>    </span><span style="color:#b48ead;">while </span><span>target &gt;= </span><span style="color:#d08770;">0</span><span>:
+</span><span>        res+=</span><span style="color:#bf616a;">findcoin</span><span>(target,n-</span><span style="color:#d08770;">1</span><span>)
+</span><span>        target  = target - coins[n-</span><span style="color:#d08770;">1</span><span>]
+</span><span>    </span><span style="color:#b48ead;">return </span><span>res
+</span><span>
+</span><span style="color:#bf616a;">findcoin</span><span>(</span><span style="color:#d08770;">200</span><span>,</span><span style="color:#d08770;">8</span><span>)
+</span></code></pre>
+
+    </div>
+
+</body>
+
+</html>

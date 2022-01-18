@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ciao!</title>
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep/simple.css" }}">
+
+  
+  <link rel="shortcut icon" href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep&#x2F;imgs&#x2F;zola-favicon.ico">
+  
+
+  <link rel="alternate" type="application/atom+xml" title="Ciao!" href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep/atom.xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ 
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError : false
+          });
+      });
+  </script>
+  
+
+</head>
+
+<body>
+    
+    <div class="blogpost">
+      <a href="https:&#x2F;&#x2F;tsai002.github.io&#x2F;nodep">&#8592; Home</a>
+      <h2 class="post-title">Never load MathJax unless Latex is needed</h2>
+      <p>You pay what you need. If one page doesn't need $latex$, it will not load MathJax.</p>
+<p>Add that article like</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>+++
+</span><span>title = &quot;use latex&quot;
+</span><span>date = &quot;2022-01-16&quot;
+</span><span>[extra]
+</span><span>latex = true
+</span><span>+++
+</span></code></pre>
+<p>$$1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p$$</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>$$1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p$$
+</span></code></pre>
+<p>inline latex $latex$</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>inline latex $latex$
+</span></code></pre>
+
+    </div>
+
+</body>
+
+</html>

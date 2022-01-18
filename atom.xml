@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Ciao!</title>
+	<subtitle>“When you don&#x27;t create things, you become defined by your tastes rather than ability. Your tastes only narrow &amp; exclude people. So create.” ― Why The Lucky Stiff</subtitle>
+	<link href="https://tsai002.github.io/nodep/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://tsai002.github.io/nodep"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-01-17T00:00:00+00:00</updated>
+	<id>https://tsai002.github.io/nodep/atom.xml</id>
+	<entry xml:lang="en">
+		<title>no javascript and unnecessary css dependency</title>
+		<published>2022-01-17T00:00:00+00:00</published>
+		<updated>2022-01-17T00:00:00+00:00</updated>
+		<link href="https://tsai002.github.io/nodep/no-depency-and-fast/" type="text/html"/>
+		<id>https://tsai002.github.io/nodep/no-depency-and-fast/</id>
+		<content type="html">&lt;p&gt;On the basis of great work of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kevquirk&#x2F;simple.css&quot;&gt;simple.css&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nicolewhite&#x2F;nicolewhite.github.io_old&quot;&gt;Nicole White&lt;&#x2F;a&gt;, only 10KB css file is needed (2.91KB transfered if you minify it ), no jQuery or Bootstrap at all.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;one html (1.46KB transfered &#x2F; 1.86KB size)&lt;&#x2F;li&gt;
+&lt;li&gt;one css (3.91KB transfered &#x2F; 10.42KB size)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;optional&lt;&#x2F;strong&gt; GitHub&#x2F;mail&#x2F;rss icons&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;optional&lt;&#x2F;strong&gt; favicon&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In my personal &lt;a href=&quot;https:&#x2F;&#x2F;tsai002.github.io&quot;&gt;blog&lt;&#x2F;a&gt;, I make these svgs and favicon inlined to html so that only two requests required:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;one html(6 icons included) (5.97KB transfered &#x2F; 10.05KB size)&lt;&#x2F;li&gt;
+&lt;li&gt;one css (2.91KB transfered &#x2F; 7.08KB size)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Zola is able to minify html and I minified css manually.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Never load MathJax unless Latex is needed</title>
+		<published>2022-01-16T00:00:00+00:00</published>
+		<updated>2022-01-16T00:00:00+00:00</updated>
+		<link href="https://tsai002.github.io/nodep/latex/" type="text/html"/>
+		<id>https://tsai002.github.io/nodep/latex/</id>
+		<content type="html">&lt;p&gt;You pay what you need. If one page doesn&#x27;t need $latex$, it will not load MathJax.&lt;&#x2F;p&gt;
+&lt;p&gt;Add that article like&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;+++
+&lt;&#x2F;span&gt;&lt;span&gt;title = &amp;quot;use latex&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;date = &amp;quot;2022-01-16&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;[extra]
+&lt;&#x2F;span&gt;&lt;span&gt;latex = true
+&lt;&#x2F;span&gt;&lt;span&gt;+++
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;$$1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p$$&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$$1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p$$
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;inline latex $latex$&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;inline latex $latex$
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>syntax highlighting</title>
+		<published>2022-01-15T00:00:00+00:00</published>
+		<updated>2022-01-15T00:00:00+00:00</updated>
+		<link href="https://tsai002.github.io/nodep/syntax-highlighting/" type="text/html"/>
+		<id>https://tsai002.github.io/nodep/syntax-highlighting/</id>
+		<content type="html">&lt;h3 id=&quot;31-coin-sums&quot;&gt;31. Coin sums&lt;&#x2F;h3&gt;
+&lt;p&gt;In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:&lt;&#x2F;p&gt;
+&lt;p&gt;$1p, 2p, 5p, 10p, 20p, 50p, £1 (100p)$ and $£2 (200p)$.&lt;&#x2F;p&gt;
+&lt;p&gt;It is possible to make £2 in the following way:&lt;&#x2F;p&gt;
+&lt;p&gt;$$1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p$$&lt;&#x2F;p&gt;
+&lt;p&gt;How many different ways can £2 be made using any number of coins?&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;coins = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;50&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;100&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;200&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;findcoin&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;target&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;n &amp;lt;=  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span&gt;    res = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;while &lt;&#x2F;span&gt;&lt;span&gt;target &amp;gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;        res+=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;findcoin&lt;&#x2F;span&gt;&lt;span&gt;(target,n-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;        target  = target - coins[n-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;res
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;findcoin&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;200&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>
