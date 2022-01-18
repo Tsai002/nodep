@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{ config.title }}</title>
-  <link rel="stylesheet" href="{{ get_url(path="simple.css", trailing_slash=false) }}">
+  <link rel="stylesheet" href="{{ config.base_url }}/simple.css" }}">
 
   {% if config.extra.favicon %}
   <link rel="shortcut icon" href="{{ config.base_url }}{{ config.extra.favicon }}">

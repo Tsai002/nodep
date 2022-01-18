@@ -9,19 +9,19 @@
 
       <br>
       {%- if config.extra.douban -%}
-      <a href=" {{ config.extra.douban }} "><img alt="douban" height="32" width="32" src="{{ get_url(path="/imgs/douban.svg", trailing_slash=false) }}"></a>
+      <a href=" {{ config.extra.douban }} "><img alt="douban" height="32" width="32" src="{{ config.base_url }}/imgs/douban.svg"></a>
       {%- endif -%}
       {%- if config.extra.github -%}
-      <a href=" {{ config.extra.github }} "><img alt="github" height="32" width="32" src="{{ get_url(path="/imgs/github.svg", trailing_slash=false) }}"></a>
+      <a href=" {{ config.extra.github }} "><img alt="github" height="32" width="32" src="{{ config.base_url }}/imgs/github.svg"></a>
       {%- endif -%}
       {%- if config.extra.mastodon -%}
-      <a href=" {{ config.extra.mastodon }}"><img alt="mastodon" height="32" width="32" src="{{ get_url(path="/imgs/mastodon.svg", trailing_slash=false) }}"></a>
+      <a href=" {{ config.extra.mastodon }}"><img alt="mastodon" height="32" width="32" src="{{ config.base_url }}/imgs/mastodon.svg"></a>
       {%- endif -%}
       {%- if config.extra.mail -%}
-      <a href="mailto:{{ config.extra.mail }}"><img alt="mail" height="32" width="32" src="{{ get_url(path="/imgs/mail.svg", trailing_slash=false) }}"></a>
+      <a href="mailto:{{ config.extra.mail }}"><img alt="mail" height="32" width="32" src="{{ config.base_url }}/imgs/mail.svg"></a>
       {%- endif -%}
       {%- if config.generate_feed -%}
-      <a href="atom.xml"><img alt="RSS" height="32" width="32" src="{{ get_url(path="/imgs/rss.svg", trailing_slash=false) }}"></a>
+      <a href="atom.xml"><img alt="RSS" height="32" width="32" src="{{ config.base_url }}/imgs/rss.svg"></a>
       {%- endif -%}
 
     </header>
